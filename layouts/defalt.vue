@@ -34,14 +34,14 @@ useHead({
     script: [
         {
             async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=G-47926J27Y9',
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-K2NYFMRNR9',
         },
         {
             innerHTML:`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-47926J27Y9');            
+            gtag('config', 'G-K2NYFMRNR9');            
             `,
             type: 'text/javascript',
         },

@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as s,o as n}from"./BYz6xRKE.js";const r={};function a(c,e){return n(),t("div",null,e[0]||(e[0]=[s("h1",null,"this is logout page",-1)]))}const u=o(r,[["render",a]]);export{u as default};

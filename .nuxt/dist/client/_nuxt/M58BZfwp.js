@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as n,o}from"./BYz6xRKE.js";const r={};function a(c,e){return o(),t("div",null,e[0]||(e[0]=[n("h1",null,"this is Meme page",-1)]))}const m=s(r,[["render",a]]);export{m as default};
