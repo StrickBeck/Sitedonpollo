@@ -1,11 +1,10 @@
 <template>
     <header class = "flex flex-row w-full bg-blue-900">
-        <div class = "basis-1/4 items-center justify-start px-8">
-            <a href="http://localhost:3000/" class="w-16 h-16"><img src="/assets/images/image.png" class="h-16 w-16 bg-transparent"></a>
+        <div class = "basis-1/4 items-center justify-start px-8"><img src="/assets/images/donpollologo.jpg" class="h-16 w-16 bg-transparent">
         </div>
         <div class="basis-1/4">
         </div>
-        <nav :class="{'basis-1/2 flex flex-row items-center justify-end px-8 gap-4': !burger || burger,
+        <nav :class="{'basis-1/2 flex flex-row items-center  text-yellow-300 justify-end px-8 gap-4': !burger || burger,
          'max-sm:basis-auto max-sm:absolute max-sm:top-full max-sm:w-full max-sm:justify-center max-sm:flex-col max-sm:gap-0 max-sm:bg-white max-sm:px-0': burger,'max-sm:hidden':!burger}">
       <NuxtLink to="/" class="my-auto p-2 hover:bg-gray-500 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-black max-sm:text-center">Home</NuxtLink>
       <div class="my-auto p-2 hover:bg-gray-500 hover:text-white max-sm:w-full max-sm:text-center max-sm:px-0 max-sm:pb-0" @click = "switch_submenu">Labs
@@ -19,6 +18,7 @@
       <NuxtLink to="/login" :class="{'my-auto p-2 hover:bg-gray-500 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-black max-sm:text-center': submenu,
       'my-auto p-2 hover:bg-gray-500 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-t-2 max-sm:border-black max-sm:text-center': !submenu}">LogIn</NuxtLink>
       <NuxtLink to="/logout" class="my-auto p-2 hover:bg-gray-500 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-black max-sm:text-center">LogOut</NuxtLink>
+        <NuxtLink to="/meme" class="my-auto p-2 hover:bg-gray-500 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-black max-sm:text-center">Memes</NuxtLink>
     </nav>
     <div v-if ="!burger" @click ="switch_burger" class = "max-sm:flex max-sm:flex-col max-sm:mr-8 max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6">
       <span class="h-[3px] w-full bg-blue-950"></span>
@@ -41,8 +41,8 @@
         <a href="https://www.facebook.com/"><img src="/assets/images/facebook.png" class="w-16 h-16 bg-transparent"></a>
         <a href="https://github.com/"><img src="/assets/images/github.png" class="w-16 h-16 bg-transparent"></a>
     </footer>
-    <footer class="p-4 bg-gray-100">
-  <div class="text-xs text-gray-500 text-center">
+    <footer class="flex flex-row w-full bg-gray-800 items-center justify-center">
+        <div class="text-xs text-gray-500 text-center">
     <p>© 2025 Donpollo</p>
   </div>
 </footer>
